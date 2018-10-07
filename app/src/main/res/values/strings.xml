@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">project1</string>
+    <string name="question_australia">Constantinople is the largest city in Turkey.</string>
+    <string name="question_oceans">The Pacific Ocean is larger than the Atlantic Ocean</string>
+    <string name="question_mideast">The Suez Canal connects the Red Sea and the Indian Ocean.</string>
+    <string name="question_africa">The source of the Nile River is in Egypt.</string>
+    <string name="question_americas">The Amazon River is the longest river in the Americas.</string>
+    <string name="question_asia">Lake Baikal is the world\'s oldest and deepest freshwater lake.</string>
+    <string name="question_europe">They have the British accents in the UK.</string>
+    <string name="question_japan">Hiroshima and Nagasaki were the two places that were bombed in WW2.</string>
+    <string name="question_korea">The main dish to eat in Korea is the Ramen</string>
+    <string name="question_hawaii">One of Hawaii\'s major gods is Pele, the goddess of volcanoes.</string>
+    <string name="true_button">true</string>
+    <string name="false_button">false</string>
+    <string name="next_button">next</string>
+    <string name="previous_button">previous</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+    <string name="amount_of_correct_answers">Number of correct answers: </string>
+    <string name="menu_settings">settings</string>
+</resources>

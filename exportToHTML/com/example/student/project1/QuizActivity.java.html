@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>QuizActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+QuizActivity.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">com.example.student.project1; 
+ 
+</span><span class="s0">import </span><span class="s1">android.support.v7.app.AppCompatActivity; 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+</span><span class="s0">import </span><span class="s1">android.view.Gravity; 
+</span><span class="s0">import </span><span class="s1">android.widget.Button; 
+</span><span class="s0">import </span><span class="s1">android.view.View; 
+</span><span class="s0">import </span><span class="s1">android.widget.Toast; 
+ 
+ 
+</span><span class="s0">public class </span><span class="s1">QuizActivity </span><span class="s0">extends </span><span class="s1">AppCompatActivity { 
+ 
+    </span><span class="s0">private </span><span class="s1">Button mTrueButton; 
+    </span><span class="s0">private </span><span class="s1">Button mFalseButton; 
+ 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_quiz); 
+ 
+        mTrueButton = (Button) findViewById(R.id.true_button); 
+        mTrueButton.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() { 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onClick(View v) { 
+                Toast toast = Toast.makeText(QuizActivity.</span><span class="s0">this</span><span class="s1">, R.string.incorrect_toast, Toast.LENGTH_SHORT); 
+                toast.setGravity(Gravity.TOP, </span><span class="s2">0</span><span class="s1">, </span><span class="s2">0</span><span class="s1">); 
+                toast.show(); 
+            } 
+        }); 
+ 
+        mFalseButton = (Button) findViewById(R.id.false_button); 
+        mFalseButton.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() { 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onClick(View v) { 
+                Toast toast = Toast.makeText(QuizActivity.</span><span class="s0">this</span><span class="s1">, R.string.correct_toast, Toast.LENGTH_SHORT); 
+                toast.setGravity(Gravity.TOP, </span><span class="s2">0</span><span class="s1">, </span><span class="s2">0</span><span class="s1">); 
+                toast.show(); 
+            } 
+        }); 
+    } 
+ 
+}</span></pre>
+</body>
+</html>
